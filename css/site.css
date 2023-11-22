@@ -4,7 +4,7 @@
   --dark-color: #292929;
   --white-color: #e7e7e7;
 }
-main>.container {
+main > .container {
   padding: 60px 15px 0;
   margin-bottom: 5rem;
 }
@@ -21,11 +21,11 @@ footer {
   background-color: var(--dark-color);
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   color: var(--primary);
 }
@@ -36,7 +36,7 @@ footer {
 
 footer .social a {
   color: var(--white-color);
-  opacity: .75;
+  opacity: 0.75;
 }
 
 footer .social > a:hover {
@@ -45,17 +45,14 @@ footer .social > a:hover {
 }
 
 .img-container {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.counter-app-img {
-  position: absolute;
-  top: 2%;
-  left: 40%;
-  width: 20%;
-  
+.logoFont {
+  font-family: 'Berkshire Swash', serif;
 }
-
 .bsicon {
   color: purple;
 }
@@ -83,6 +80,23 @@ pre[class*="language-"] {
   word-wrap: break-word;
 }
 
+#btnSubmit {
+  background: rgb(3,0,36);
+  background: linear-gradient(270deg, rgba(109,96,255,1) 0%, rgba(16,157,255,1) 67%, rgba(15,210,250,1) 100%);
+  color: #292929;
+  font-weight: 600;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: black;
+  box-shadow: 1px  1px 5px;
+}
+
+#btnSubmit:hover {
+  opacity: 0.75;
+  background-color: rgb(73, 98, 170);
+  color: whitesmoke;
+  box-shadow: 1px  4px 8px;
+}
 .sticky-footer {
   position: sticky;
   left: 0;
